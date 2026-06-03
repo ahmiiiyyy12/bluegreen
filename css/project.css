@@ -1,0 +1,21 @@
+.navbar{
+    width: 97%;
+    height: 50px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 0 5px;
+  
+}
+
+.list-item{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 30px;
+    margin: auto;
+}
+.item:hover{
+    font-weight: bold;
+    color: rgb(236, 13, 13);
+    background-color: aquamarine;
+}

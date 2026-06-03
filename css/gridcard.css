@@ -1,0 +1,78 @@
+.navbar{    
+    position: relative;
+    position: fixed;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+}
+.p{
+    font-size: 50px;
+    font-family: fantasy;
+    color: blue;
+}
+.list{
+    margin-left: 650px;
+    font-size: 30px;
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+.navbar >img{
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.slide{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(190, 234, 219);
+}
+.containner{
+    position: static;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 500px;
+    gap: 15px;
+    padding: 5px;
+}
+.card{
+    border-radius: 10px;
+    background-color: beige;
+}
+.box-img{
+    background-color: rgb(223, 232, 177);
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+    margin: auto;
+}
+.box-img >img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+}
+.title{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    overflow: hidden;
+}
+.btt{
+    width: 40%;
+    height: 4vh;
+    border-radius: 15px;
+}
+.icon{
+    color: rgb(130, 130, 10);
+}
+p{
+    font-size: 18px;
+}
+h3{
+    font-size: 25px;
+}
+
