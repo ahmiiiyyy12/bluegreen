@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+</head>
+<body>
+    <script>
+        let id, name, sex, khmer, math, english, total, average;
+
+        id = (prompt("Input id : ")),
+        name = (prompt("Input Name:"));
+        sex = (prompt("Input Sex:"));
+        khmer = Number(prompt("Input Khmer score: ")),
+        math = Number(prompt("Input Math score: ")),
+        english =Number(prompt("Input English score: "));
+
+        document.write("ID : " +id+"<br>");
+        document.write("Name : " +name+"<br>");
+        document.write("Sex : " +sex+"<br>");
+        document.write("Khmer : " +khmer+"<br>");
+        document.write("Math : " +math+"<br>");
+        document.write("English : " +english+"<br>");
+
+        total = khmer+math+english;
+        document.write("Total: "+ total+"<br>");
+        document.write("Average : "+(total/3)+"<br>");
+  
+        
+
+    </script>
+</body>
+</html>

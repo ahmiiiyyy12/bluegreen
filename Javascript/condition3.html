@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <table class="table w-100">
+            <tr class="gap-3">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+                <th>Position</th>
+                <th>Bunus</th>
+            </tr>
+            <tr>
+                <td id="id"></td>
+                <td id="name"></td>
+                <td id="gender"></td>
+                <td id="salary"></td>
+                <td id="position"></td>
+                <td id="bunus"></td>
+            </tr>
+        </table>
+
+    </div>
+    <script>
+        let id, name, gender;
+        let salary, bunus, position, total_salary;
+
+        id = prompt("Enter ID :");
+        name = prompt("Enter Name :");
+        gender = prompt("Enter Gender :");
+        salary = parseFloat(prompt("Enter Gender :"));
+        position = prompt("Enter Position");
+
+        if(position.toLowerCase === "manager"){
+            bunus = 20;
+        }else if(position.toLowerCase === "accounting"){
+            bunus = 15;
+        }else if(position.toLowerCase === "it"){
+            bunus = 25;
+        }else{
+            bunus = 10;
+        }
+
+        total_salary = salary + (salary*bunus)/100;
+
+    document.getElementById("id").innerHTML = id ;
+    document.getElementById("Name").innerHTML = name;
+    document.getElementById("Gender").innerHTML =gender;
+    document.getElementById("Salary").innerHTML =salary;
+    document.getElementById("Position").innerHTML =position;
+    document.getElementById("Bunus").innerHTML=bunus;
+
+
+    </script>
+</body>
+</html>

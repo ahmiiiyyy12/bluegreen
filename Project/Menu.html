@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top shadow p-3 bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" style="color: brown;" href="#">FoodShop</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+   <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-black btn btn-light px-3" href="/Project/Homepage1.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black btn btn-light px-3" href="/Project/Menu.html">Menu</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text-black fw-bold " href="/Project/Categary1.html" >Categary</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black fw-bold dropdown-toggle" href="/Project/Categary1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#fastfood">Fast Food</a></li>
+            <li><a class="dropdown-item" href="#asianfood">Asian Food</a></li>
+            <li><a class="dropdown-item" href="#westernfood">Western Food</a></li>
+            <li><a class="dropdown-item" href="#Dessert&drink">Desserts & Drinks</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex align-items-center me-4 gap-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        </svg>
+      </form>
+    </div>
+  </div>
+  </nav>
+
+  <div class="container overflow-hidden h-aut0" style="margin-top: 150px;">
+    <img src="https://i.pinimg.com/736x/eb/bd/95/ebbd95040611d2c8a9404c29fb65b45c.jpg" class="w-100 h-100 object-fit-cover" >
+  </div>
+
+  <div class="container h-auto overflow-hidden " style="margin-top: 100px;">
+    <h1 class="text-center">welcom to my website</h1>
+
+    <div class="container py-5 bg-light">
+        <h2 class="text-center mb-4">មុខម្ហូបប្រចាំថ្ងៃ</h2>
+        
+        <div class="text-center mb-5">
+            <button class="btn btn-outline-dark active">All</button>
+            <button class="btn btn-outline-dark">Food</button>
+            <button class="btn btn-outline-dark">Dessert</button>
+            <button class="btn btn-outline-dark">Drink</button>
+            <button class="btn btn-outline-dark">Breakfast</button>
+        </div>
+
+        <div class="row g-2 mt-4 h-100">
+
+            <div class="col col-md-6 col-lg-3 p-3">
+              <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/1200x/5a/8e/b0/5a8eb03dbafe045c89cef6eeefa04e7a.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Amok Khmer</h5>
+                        <p class="card-text">Succulent fish</p>
+                        <h6 class="text-primary">$5.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/d4/01/84/d40184063defa13a1934fcfffd7d6d51.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">នំអាកោរត្នោត</h5>
+                        <p class="card-text">fresh palm juice</p>
+                        <h6 class="text-primary">$5.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/236x/52/c2/d6/52c2d685ea1c084eb7925012c66195f7.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">បាយឆា</h5>
+                        <p class="card-text">បាយឆាជាមួយគ្រឿងសមុទ្រស្រស់ៗ។</p>
+                        <h6 class="text-primary">$5.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/00/2e/e0/002ee07fbe3aec0238b756a13b0ff2cd.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">គុយទាវ</h5>
+                        <p class="card-text">រសជាតិដើមបែបខ្មែរ។</p>
+                        <h6 class="text-primary">$3.50</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/b0/8c/29/b08c292b5dac2e82754f5c2f8d29b924.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">BBQ Ribs</h5>
+                        <p class="card-text">Smoky, Sweet and Juicy</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/1200x/c0/8e/36/c08e36b8e776b1ca77b25354b6c39b03.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Potstickers</h5>
+                        <p class="card-text"> Vegan Potstickers with Tamari and Vinegar</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/1200x/48/f4/3d/48f43d01beeed7563b5678dea8ce8604.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Delicious Club Sandwich Meal</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/a3/8f/a1/a38fa19e0ed1590f827decbe5cde71c4.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">Delicious & yummy food</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/1200x/47/1e/f5/471ef5073b11ddb84ddf741d25525514.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Pandan Cake</h5>
+                        <p class="card-text">The cake is soft and chewy</p>
+                        <h6 class="text-primary">$5.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/01/55/9a/01559a40b817d09b173c897f990f6f90.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cream</h5>
+                        <p class="card-text">Delicious Ice Cream Sundae%។</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/70/22/93/7022931a2655af78ec41a44fa0b57937.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Creme Caramel</h5>
+                        <p class="card-text">Sweet and Silky Tropical Treat</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/1200x/e6/f7/10/e6f710f405a827cfa8e84d62c43e8b38.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookies</h5>
+                        <p class="card-text">Cheesecake Stuffed Chocolate Chip Cookies</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/7b/94/b5/7b94b5b4e3f9a45cd5d7d88ff2c33589.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza</h5>
+                        <p class="card-text">cheese pizza,delicious pizza.</p>
+                        <h6 class="text-primary">$10.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/4c/8c/65/4c8c65c92d3d0841408a765839f69977.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Creamy Mango</h5>
+                        <p class="card-text">Fresh Mango Cream Shake</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/1200x/13/31/87/133187688edddd1157da263a05ce05df.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">Creamy Blueberry</h5>
+                        <p class="card-text">Fresh Bluberry and Raspberry</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col col-md-6 col-lg-3 p-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/736x/a8/83/3d/a8833db067e78f855128bc140180d7ad.jpg" class="card-img-top" alt="Food">
+                    <div class="card-body">
+                        <h5 class="card-title">ទឹកក្រូចស្រស់</h5>
+                        <p class="card-text">ទឹកក្រូចពោធិសាត់ស្រស់១០០%។</p>
+                        <h6 class="text-primary">$2.00</h6>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#orderModal">Order</button>
+                    </div>
+                </div>
+            </div>
+
+          <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="orderModalLabel">បញ្ជាក់ការកុម្ម៉ង់</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <p>អ្នកបានជ្រើសរើស៖ <strong></strong></p>
+                      <div class="mb-3">
+                        <label for="quantity" class="form-label">ចំនួន៖</label>
+                        <input type="number" class="form-control" id="quantity" value="1" min="1">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">កំណត់សម្គាល់បន្ថែម៖</label>
+                        <textarea class="form-control" rows="2"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+               </div>
+          </div>
+       </div>
+   </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

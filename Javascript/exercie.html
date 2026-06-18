@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+</head>
+<body>
+    <script>
+        let code;
+        let name;
+        let qty, dis, price;
+        let total_price, payment;
+
+        code = prompt("Input code of product : ");
+        name = prompt("Input name of product : ");
+        qty = prompt("Input Qty : ");
+        price = prompt("Input Price : ");
+        dis = prompt("Input Discount : ");
+
+        total_price = qty*price;
+        payment = total_price - (price*dis/100) ;
+
+
+        document.write("I have discount for u "+ dis+"% <br>");
+        document.write("Code of product: "+ code +"<br>");
+        document.write("Name of product: "+ name +"<br>");
+        document.write("Quntity of product: "+ qty +"<br>");
+        document.write("Price of product: "+ price +"$  or "+(price*4050).toFixed(2) +"៛<br>");
+        document.write("Discount of product: "+ dis +"%<br>");
+        document.write("Total Price of product: "+total_price+ "$  or "+(price*4050).toFixed(2)+"៛<br>");
+        document.write("Payment : "+payment + "$  or "+ (payment*4050).toFixed(2) +"៛<br>");
+    </script>
+</body>
+</html>
